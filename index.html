@@ -81,6 +81,22 @@
     </table>
      
     <hr>
+
+    <h3>Code Fencing</h3>
+
+    <blockquote>How to find Users IP Address using PHP?</blockquote>
+    <pre>Reference for StackOverFlow Question: <a href="https://stackoverflow.com/questions/3003145/how-to-get-the-client-ip-address-in-php">Link for Code Reference</a> </pre>
+   
+    <pre>
+        if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+            $ip=$_SERVER['HTTP_CLIENT_IP'];
+       } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+            $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+       } else {
+            $ip=$_SERVER['REMOTE_ADDR'];
+       }
+   
+   </pre> 
     
     
 </body>
